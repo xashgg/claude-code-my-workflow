@@ -1,0 +1,1128 @@
+{
+  "schema_version": 1,
+  "generator": "scripts/codex-compat.py",
+  "runtime_status": "Not certified by generation or structural validation.",
+  "skills": {
+    "adjudicate-review": {
+      "source": ".claude/skills/adjudicate-review/SKILL.md",
+      "sha256_lf": "fd9ed8856769d3297bbc6a9dd5490b91791a22e4713a7e35d9a5dde63ea25faa",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-adjudicate-review/SKILL.md"
+    },
+    "audit-reproducibility": {
+      "source": ".claude/skills/audit-reproducibility/SKILL.md",
+      "sha256_lf": "69aa54eeb0a02974d46ae19bfa794e85a612658664a35e820c0d4c5bece5ea55",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-audit-reproducibility/SKILL.md"
+    },
+    "blast-radius": {
+      "source": ".claude/skills/blast-radius/SKILL.md",
+      "sha256_lf": "b4c9f1693f5bda9379f120d3b45afa0636eeb259ed91bac0e50e6bf528924f3b",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-blast-radius/SKILL.md"
+    },
+    "capture-environment": {
+      "source": ".claude/skills/capture-environment/SKILL.md",
+      "sha256_lf": "638ab8093338b625f324185583a0290b77feff0946a226ae1591457dbd1221d3",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-capture-environment/SKILL.md"
+    },
+    "challenge": {
+      "source": ".claude/skills/challenge/SKILL.md",
+      "sha256_lf": "aac4117e29ad36394bc7915c30f2ef7a0147a0eff6417c979bfc7739ae113c1b",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-challenge/SKILL.md"
+    },
+    "checkpoint": {
+      "source": ".claude/skills/checkpoint/SKILL.md",
+      "sha256_lf": "3a8bf95080a5f4bdf4dee2b518d3b98d257d3b0d0784b6c00dd28b646670a91b",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-checkpoint/SKILL.md"
+    },
+    "coauthor-brief": {
+      "source": ".claude/skills/coauthor-brief/SKILL.md",
+      "sha256_lf": "f945f76b0a5af37bc286cbe6b87605e2dd2ba4126565c00ba6a16cceb4b33d7c",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-coauthor-brief/SKILL.md"
+    },
+    "commit": {
+      "source": ".claude/skills/commit/SKILL.md",
+      "sha256_lf": "899017f9ba57f0b52ae78613e6a786bc6c74402740a01e644e5c7e875f435c0c",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-commit/SKILL.md"
+    },
+    "compile-latex": {
+      "source": ".claude/skills/compile-latex/SKILL.md",
+      "sha256_lf": "6784e39c6cfe37363b4e2c90818d6fad83307e2b70348d5624eef28048f979ff",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-compile-latex/SKILL.md"
+    },
+    "compress-session": {
+      "source": ".claude/skills/compress-session/SKILL.md",
+      "sha256_lf": "d10fea6862d04bedd8dfe58d0bebd6966c0b0526d506165233d4267ec66dc243",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-compress-session/SKILL.md"
+    },
+    "context-status": {
+      "source": ".claude/skills/context-status/SKILL.md",
+      "sha256_lf": "eae61e432378ea4be2f7672abb686684d0fd0d03f67aa67f65564f01ef9cd3b2",
+      "explicit_only": false,
+      "status": "excluded",
+      "independence_check_required": false,
+      "adapter": null,
+      "reason": "Claude session caches and context estimates are not Codex telemetry."
+    },
+    "create-lecture": {
+      "source": ".claude/skills/create-lecture/SKILL.md",
+      "sha256_lf": "3991ca24e6abe8a0a2c872be49ec808752d6a64cc7597bb8d902f364b4ed24b0",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-create-lecture/SKILL.md"
+    },
+    "credible-claims": {
+      "source": ".claude/skills/credible-claims/SKILL.md",
+      "sha256_lf": "19cab4a6f7b568e6c419677b2d45afb61593efbe18f7fe5b03943d28024c572d",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-credible-claims/SKILL.md"
+    },
+    "data-analysis": {
+      "source": ".claude/skills/data-analysis/SKILL.md",
+      "sha256_lf": "765d180619ad0debd216b4b75eaa474b035d9ae54bf83e3a1613adecc4b33036",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-data-analysis/SKILL.md"
+    },
+    "data-management-plan": {
+      "source": ".claude/skills/data-management-plan/SKILL.md",
+      "sha256_lf": "9224946e344651c00339119df97237c76451cf1a6931ed8ca88db3edfae79454",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": true,
+      "adapter": ".agents/skills/academic-data-management-plan/SKILL.md"
+    },
+    "deep-audit": {
+      "source": ".claude/skills/deep-audit/SKILL.md",
+      "sha256_lf": "d1cbf2061f98612e27e1aaffa2bbe8f88f5e00c9967b3dcdbfa5c77d59118106",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": true,
+      "adapter": ".agents/skills/academic-deep-audit/SKILL.md"
+    },
+    "deploy": {
+      "source": ".claude/skills/deploy/SKILL.md",
+      "sha256_lf": "0151e604dcc5207ed2a91917e5cdfdddefcb45606371b414ad2ba727ae900d61",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-deploy/SKILL.md"
+    },
+    "devils-advocate": {
+      "source": ".claude/skills/devils-advocate/SKILL.md",
+      "sha256_lf": "981e681fd90301b80aa64f96940d83a4be016b7e913a421059fe4e24f768c1e2",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-devils-advocate/SKILL.md"
+    },
+    "diagnose": {
+      "source": ".claude/skills/diagnose/SKILL.md",
+      "sha256_lf": "c0a33e097a3c2cd9c1be6ab1f8a08052c74606786f4cd2254770022d2ca41f36",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-diagnose/SKILL.md"
+    },
+    "differential-audit": {
+      "source": ".claude/skills/differential-audit/SKILL.md",
+      "sha256_lf": "72335e59883f8fcf285a1cd4af475c7ecda4aa194302a60475b3715a26a59167",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": true,
+      "adapter": ".agents/skills/academic-differential-audit/SKILL.md"
+    },
+    "disclosure-check": {
+      "source": ".claude/skills/disclosure-check/SKILL.md",
+      "sha256_lf": "eb9d02f9177a00be6c5b2837bb50c309bec31b18da5781eb5bbf2ef94d025af1",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-disclosure-check/SKILL.md"
+    },
+    "extract-tikz": {
+      "source": ".claude/skills/extract-tikz/SKILL.md",
+      "sha256_lf": "dfe2c0233d55eb3b7b0274d9e4e38ed3edc193b070b0a62ffd84e644672e522e",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-extract-tikz/SKILL.md"
+    },
+    "grant-proposal": {
+      "source": ".claude/skills/grant-proposal/SKILL.md",
+      "sha256_lf": "d6a837d27e06039089f4cae8e550d5beb2c20ccd3aed08ecf4d7c4cfe6b5f8e3",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": true,
+      "adapter": ".agents/skills/academic-grant-proposal/SKILL.md"
+    },
+    "humanize": {
+      "source": ".claude/skills/humanize/SKILL.md",
+      "sha256_lf": "12161ebd284e438ebafed4c67533d183bf87a41a736f71f3d02b2aa2e05b6b50",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-humanize/SKILL.md"
+    },
+    "interview-me": {
+      "source": ".claude/skills/interview-me/SKILL.md",
+      "sha256_lf": "cc1ca11146e737830f31f4f5c10dc74be617d9ecd86a892876763d891e8086ea",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": true,
+      "adapter": ".agents/skills/academic-interview-me/SKILL.md"
+    },
+    "issues": {
+      "source": ".claude/skills/issues/SKILL.md",
+      "sha256_lf": "6b64bb7ae436a4d4a52812c653eda8ff91f6473b59cb31da4df253289f63312b",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-issues/SKILL.md"
+    },
+    "learn": {
+      "source": ".claude/skills/learn/SKILL.md",
+      "sha256_lf": "192c5c8c943cc8098886cd8bdb3f3ca4f09ec706d7a3f768c1ad320b0098275c",
+      "explicit_only": true,
+      "status": "excluded",
+      "independence_check_required": false,
+      "adapter": null,
+      "reason": "Writes and registers Claude skills; cross-platform authoring is deferred."
+    },
+    "lit-review": {
+      "source": ".claude/skills/lit-review/SKILL.md",
+      "sha256_lf": "23e2283d91490ba50266566683da9bb579c6bf8dc8596233903fbc281c49a1f2",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": true,
+      "adapter": ".agents/skills/academic-lit-review/SKILL.md"
+    },
+    "new-diagram": {
+      "source": ".claude/skills/new-diagram/SKILL.md",
+      "sha256_lf": "a86355d9e670dc918f2e8eac6611ca0d1979e2b8eafdcc3cf19241d14b020ecf",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-new-diagram/SKILL.md"
+    },
+    "new-skill": {
+      "source": ".claude/skills/new-skill/SKILL.md",
+      "sha256_lf": "6484c98bf0b98cddba6d3d6a330c98a98e4faddd506d718981fe333090b387c6",
+      "explicit_only": true,
+      "status": "excluded",
+      "independence_check_required": false,
+      "adapter": null,
+      "reason": "Writes Claude skills and upstream documentation/count surfaces."
+    },
+    "oracle-review": {
+      "source": ".claude/skills/oracle-review/SKILL.md",
+      "sha256_lf": "56f5acddf6c65b105c201068686071ef263a42f4998caac1a3d303cdf8a692cd",
+      "explicit_only": true,
+      "status": "excluded",
+      "independence_check_required": false,
+      "adapter": null,
+      "reason": "The OpenAI target does not preserve cross-vendor review from Codex."
+    },
+    "pedagogy-review": {
+      "source": ".claude/skills/pedagogy-review/SKILL.md",
+      "sha256_lf": "494c265ad0d3e1f860e4c1b1137e94eb2965d24eadd17b50c4573d1efdea2ad5",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-pedagogy-review/SKILL.md"
+    },
+    "permission-check": {
+      "source": ".claude/skills/permission-check/SKILL.md",
+      "sha256_lf": "f23e67f069525c73fa7a1b17e5dafb594d0ccdd51bca29762062a6f3de0b50a4",
+      "explicit_only": false,
+      "status": "excluded",
+      "independence_check_required": false,
+      "adapter": null,
+      "reason": "Diagnoses Claude permission layers, not Codex permissions."
+    },
+    "power-analysis": {
+      "source": ".claude/skills/power-analysis/SKILL.md",
+      "sha256_lf": "338f316f7ebff9d42fb646ab8b4fab788c3be237232f7d870ac093be7caaf5c5",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-power-analysis/SKILL.md"
+    },
+    "preregister": {
+      "source": ".claude/skills/preregister/SKILL.md",
+      "sha256_lf": "ad15982ed8d7e6e5c2029fb56ebbdebfbd2be2bf308dc9031070a276cc3b6dd1",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-preregister/SKILL.md"
+    },
+    "promote-memory": {
+      "source": ".claude/skills/promote-memory/SKILL.md",
+      "sha256_lf": "a0c58dc2ac370769f86326ac5dfc4b07f4c35d4e3adcaa55d81b971bc85bc6fb",
+      "explicit_only": true,
+      "status": "excluded",
+      "independence_check_required": false,
+      "adapter": null,
+      "reason": "Requires Claude native automatic memory and its promotion workflow."
+    },
+    "proofread": {
+      "source": ".claude/skills/proofread/SKILL.md",
+      "sha256_lf": "40c794ce26b049701efc2b3982b660dceb0c85da10483d57c41b05e6e4644122",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-proofread/SKILL.md"
+    },
+    "qa-quarto": {
+      "source": ".claude/skills/qa-quarto/SKILL.md",
+      "sha256_lf": "4fc32dc3348e6ec6b7d4ba44da2e1a405ebe8855ed60246fb6ba7c739c6d8f7c",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": true,
+      "adapter": ".agents/skills/academic-qa-quarto/SKILL.md"
+    },
+    "r-package-check": {
+      "source": ".claude/skills/r-package-check/SKILL.md",
+      "sha256_lf": "08f430f0bf6d491f3bd2d98e5eab0a02464968d18335a683f8a4b9402e6c5a88",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-r-package-check/SKILL.md"
+    },
+    "replication-package": {
+      "source": ".claude/skills/replication-package/SKILL.md",
+      "sha256_lf": "941b90db3da8909959f77971957672356e00583a43ffa100be1be3c5179ed451",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-replication-package/SKILL.md"
+    },
+    "research-ideation": {
+      "source": ".claude/skills/research-ideation/SKILL.md",
+      "sha256_lf": "cd16610e83a30b36b6fa37064ec3a5271e4fb8af076ae261aa38af77f03e9e01",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": true,
+      "adapter": ".agents/skills/academic-research-ideation/SKILL.md"
+    },
+    "respond-to-eval": {
+      "source": ".claude/skills/respond-to-eval/SKILL.md",
+      "sha256_lf": "92622383aa2d3370bf1ac9ffb48388f202e2f7ccd9a6875dcde8cfa494a9e4ad",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": true,
+      "adapter": ".agents/skills/academic-respond-to-eval/SKILL.md"
+    },
+    "respond-to-referees": {
+      "source": ".claude/skills/respond-to-referees/SKILL.md",
+      "sha256_lf": "674f8203c993b2d0df3361aeb24b360179676b74549b3b8f9b5fc413632651c0",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": true,
+      "adapter": ".agents/skills/academic-respond-to-referees/SKILL.md"
+    },
+    "review-paper": {
+      "source": ".claude/skills/review-paper/SKILL.md",
+      "sha256_lf": "91aa5081b8f14c51760360d5d75a3df9987d9f791e0d6a40f20aa499d78a0d7a",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": true,
+      "adapter": ".agents/skills/academic-review-paper/SKILL.md"
+    },
+    "review-r": {
+      "source": ".claude/skills/review-r/SKILL.md",
+      "sha256_lf": "145581a13a56da22a1e3a3fa2c73fb77eb91ae5652404ee09cd3142b9dc95245",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-review-r/SKILL.md"
+    },
+    "scaffold-exercises": {
+      "source": ".claude/skills/scaffold-exercises/SKILL.md",
+      "sha256_lf": "c5b1a9700d94e9ee92d27c793246c9ea366e15f1fc403270b8de98dd98e8827e",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-scaffold-exercises/SKILL.md"
+    },
+    "seven-pass-review": {
+      "source": ".claude/skills/seven-pass-review/SKILL.md",
+      "sha256_lf": "3e38278b020e1d905e21b308e1d1a90a8c9d9cc56803e45ddd261f7188ec8dd7",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": true,
+      "adapter": ".agents/skills/academic-seven-pass-review/SKILL.md"
+    },
+    "simulation-study": {
+      "source": ".claude/skills/simulation-study/SKILL.md",
+      "sha256_lf": "9ddf69e4243c7f670ec93f4093388843ff1a53ba8da71999b2d175454a280094",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-simulation-study/SKILL.md"
+    },
+    "slide-excellence": {
+      "source": ".claude/skills/slide-excellence/SKILL.md",
+      "sha256_lf": "c178255ed63469eb9daf7b0634e3b0f63843c2b20a5aecd984d23d73fd3e8e5e",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": true,
+      "adapter": ".agents/skills/academic-slide-excellence/SKILL.md"
+    },
+    "stata-replication": {
+      "source": ".claude/skills/stata-replication/SKILL.md",
+      "sha256_lf": "17f998028fa9ed194076a9dbe80f58c29dc0c027eb3f56a0f3360bb5073a2bc4",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-stata-replication/SKILL.md"
+    },
+    "submission-disclosures": {
+      "source": ".claude/skills/submission-disclosures/SKILL.md",
+      "sha256_lf": "7021c02bb2bf7bd9f411ca8260c56939146ae700f369d3348e9e33ececcab025",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-submission-disclosures/SKILL.md"
+    },
+    "syllabus": {
+      "source": ".claude/skills/syllabus/SKILL.md",
+      "sha256_lf": "f7fec1ed9887f00eb48c32fa9f31cd77d3e1e40ef61a2b4e2680e0af5d9e7406",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-syllabus/SKILL.md"
+    },
+    "teach-from-paper": {
+      "source": ".claude/skills/teach-from-paper/SKILL.md",
+      "sha256_lf": "9627bf254978cf9905b90942f9762b07a539f7c2732c43d389db4781ffe3abc4",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-teach-from-paper/SKILL.md"
+    },
+    "translate-to-quarto": {
+      "source": ".claude/skills/translate-to-quarto/SKILL.md",
+      "sha256_lf": "b4e646eb99b22c56753ff1d1fdfa355b7194bf41354948cb0f20e4f4717657e9",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-translate-to-quarto/SKILL.md"
+    },
+    "triage-inbox": {
+      "source": ".claude/skills/triage-inbox/SKILL.md",
+      "sha256_lf": "0da269cf43c0417047cee13e5c77a270b2402b2f3de5bdcab1085b7c47c31d26",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-triage-inbox/SKILL.md"
+    },
+    "vaccinate": {
+      "source": ".claude/skills/vaccinate/SKILL.md",
+      "sha256_lf": "7a3c18e17b2f2f56bd36bf90a226162ce128990ddeb1e7f1870d7b48b799213e",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-vaccinate/SKILL.md"
+    },
+    "validate-bib": {
+      "source": ".claude/skills/validate-bib/SKILL.md",
+      "sha256_lf": "f9045d13966de0ea654ff4ac837772f26bcb00b69f7ae5d2d03d8b493a55a200",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-validate-bib/SKILL.md"
+    },
+    "verify-artifact": {
+      "source": ".claude/skills/verify-artifact/SKILL.md",
+      "sha256_lf": "3546ddf81de0d4be39b2e3c2e57029b9e56d55fa5b2b3dc0f22a90b595fe74ea",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-verify-artifact/SKILL.md"
+    },
+    "verify-claims": {
+      "source": ".claude/skills/verify-claims/SKILL.md",
+      "sha256_lf": "de0af2716ea0ec1c45b2895ee69166ac3c42a8bbca0c7ee9135f2c77f6a10692",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": true,
+      "adapter": ".agents/skills/academic-verify-claims/SKILL.md"
+    },
+    "visual-audit": {
+      "source": ".claude/skills/visual-audit/SKILL.md",
+      "sha256_lf": "58ed3ceb6fe56780023d640c9dbec8a534dcc6e15c51df5b243f31a9d0475dd1",
+      "explicit_only": false,
+      "status": "reference-adapter",
+      "independence_check_required": false,
+      "adapter": ".agents/skills/academic-visual-audit/SKILL.md"
+    },
+    "voice-profile": {
+      "source": ".claude/skills/voice-profile/SKILL.md",
+      "sha256_lf": "017134ab5633dfb2143d8c5bcef9cd9c09320a8ec96ed7c2e6338d31d7e87e9b",
+      "explicit_only": true,
+      "status": "reference-adapter",
+      "independence_check_required": true,
+      "adapter": ".agents/skills/academic-voice-profile/SKILL.md"
+    }
+  },
+  "agents": {
+    "beamer-translator": {
+      "source": ".claude/agents/beamer-translator.md",
+      "sha256_lf": "6d541e635ef5001400fee30f2df1fb360b852b4cdc5ea36fe2c3ab4844ad33bc",
+      "status": "role-instructions-only",
+      "claude_model": "sonnet",
+      "claude_effort": "medium"
+    },
+    "claim-verifier": {
+      "source": ".claude/agents/claim-verifier.md",
+      "sha256_lf": "b06204d762052ec2145ebb8956670ad3da92464d65a726ca191b84ecc7271b14",
+      "status": "role-instructions-only",
+      "claude_model": "opus",
+      "claude_effort": "high"
+    },
+    "domain-referee": {
+      "source": ".claude/agents/domain-referee.md",
+      "sha256_lf": "ee84b99a2d76b84d260f061beb953cd13900bdf1469540d84df7b3c5ff1f43d4",
+      "status": "role-instructions-only",
+      "claude_model": "opus",
+      "claude_effort": "high"
+    },
+    "domain-reviewer": {
+      "source": ".claude/agents/domain-reviewer.md",
+      "sha256_lf": "7b33e3272cffb460dfd592740d96f168842618bfa29134f61faa81199fb23c6c",
+      "status": "role-instructions-only",
+      "claude_model": "opus",
+      "claude_effort": "medium"
+    },
+    "editor": {
+      "source": ".claude/agents/editor.md",
+      "sha256_lf": "7a5bc90cff638a7af40c7a8f855154cb445116c906449700d11ca623b2039bc6",
+      "status": "role-instructions-only",
+      "claude_model": "opus",
+      "claude_effort": "high"
+    },
+    "humanize-auditor": {
+      "source": ".claude/agents/humanize-auditor.md",
+      "sha256_lf": "0ce3e02d79d010a2175a4e85c2e870296d3fe01b8c1292a5745cfb812183b2f0",
+      "status": "role-instructions-only",
+      "claude_model": "sonnet",
+      "claude_effort": "high"
+    },
+    "methods-referee": {
+      "source": ".claude/agents/methods-referee.md",
+      "sha256_lf": "59bb0a0e8000ebbf153336ac17f3bf4b880437634b44a0560b2aadbf93de6da7",
+      "status": "role-instructions-only",
+      "claude_model": "opus",
+      "claude_effort": "high"
+    },
+    "pedagogy-reviewer": {
+      "source": ".claude/agents/pedagogy-reviewer.md",
+      "sha256_lf": "716def2841bc5088f854caa8227bd1603406605d90fd0a1608624e54ee4adab9",
+      "status": "role-instructions-only",
+      "claude_model": "sonnet",
+      "claude_effort": "high"
+    },
+    "promote-memory-council": {
+      "source": ".claude/agents/promote-memory-council.md",
+      "sha256_lf": "02adad38229e9ae45aabe94e4ad86c22ecf7bca62002fae77d8dd48ca2c0d8c0",
+      "status": "role-instructions-only",
+      "claude_model": "haiku",
+      "claude_effort": "low"
+    },
+    "proofreader": {
+      "source": ".claude/agents/proofreader.md",
+      "sha256_lf": "528c97a8de59492bcf7fc4dafd212fb29004609b3c4676831874c33ce1c4ee60",
+      "status": "role-instructions-only",
+      "claude_model": "sonnet",
+      "claude_effort": "high"
+    },
+    "quarto-critic": {
+      "source": ".claude/agents/quarto-critic.md",
+      "sha256_lf": "b70be216d5fb19528e51087494c5641075a1adab299d76dcdceb606df1856c67",
+      "status": "role-instructions-only",
+      "claude_model": "opus",
+      "claude_effort": "medium"
+    },
+    "quarto-fixer": {
+      "source": ".claude/agents/quarto-fixer.md",
+      "sha256_lf": "cab9bf62fd73f2a74d6e940a777fe31aefb2f2faaa7014d9abb7d910da267037",
+      "status": "role-instructions-only",
+      "claude_model": "sonnet",
+      "claude_effort": "medium"
+    },
+    "r-package-reviewer": {
+      "source": ".claude/agents/r-package-reviewer.md",
+      "sha256_lf": "99a060642cfca6ae53fd84b8555154d399ab8baa2a922480cad7e4f4200e30ad",
+      "status": "role-instructions-only",
+      "claude_model": "sonnet",
+      "claude_effort": "high"
+    },
+    "r-reviewer": {
+      "source": ".claude/agents/r-reviewer.md",
+      "sha256_lf": "eccebe2f1ac62bfea62d085983e75e7d7c2e59634be30130e6c39d099c7e779a",
+      "status": "role-instructions-only",
+      "claude_model": "sonnet",
+      "claude_effort": "high"
+    },
+    "sim-reviewer": {
+      "source": ".claude/agents/sim-reviewer.md",
+      "sha256_lf": "772c9e17c397239dc56443153133ff5f1f15dc6c010abae5c53e444304342904",
+      "status": "role-instructions-only",
+      "claude_model": "opus",
+      "claude_effort": "medium"
+    },
+    "slide-auditor": {
+      "source": ".claude/agents/slide-auditor.md",
+      "sha256_lf": "23a573cc5c4ec30ed5711bcf6c50afd5dea4c6d783d452fdc84cb220dfec7fa4",
+      "status": "role-instructions-only",
+      "claude_model": "sonnet",
+      "claude_effort": "high"
+    },
+    "tikz-reviewer": {
+      "source": ".claude/agents/tikz-reviewer.md",
+      "sha256_lf": "e6664fd7e39c16afcd6bcfac19b93f0ced23393d9fe7eb45d0b45703e53d6a38",
+      "status": "role-instructions-only",
+      "claude_model": "opus",
+      "claude_effort": "medium"
+    },
+    "verifier": {
+      "source": ".claude/agents/verifier.md",
+      "sha256_lf": "477059de673bf3235a54a39ad878fc9d4d631e7f30ae19265d6adc08ed25e334",
+      "status": "role-instructions-only",
+      "claude_model": "opus",
+      "claude_effort": "medium"
+    }
+  },
+  "rules": {
+    "agent-authored-code": {
+      "source": ".claude/rules/agent-authored-code.md",
+      "sha256_lf": "3b2685f9c6d912ec8599b75d8ec90e86d32dc73355f57b0c9253d6d60fe04480",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "**/*.sh",
+        "**/*.py",
+        "**/*.R",
+        "**/*.do"
+      ]
+    },
+    "beamer-quarto-sync": {
+      "source": ".claude/rules/beamer-quarto-sync.md",
+      "sha256_lf": "6e6307f0a1cd255f49c955db1591bc8eaa16806474ffd9ea4079da330677d120",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "Slides/**/*.tex",
+        "Quarto/**/*.qmd"
+      ]
+    },
+    "confidential-data": {
+      "source": ".claude/rules/confidential-data.md",
+      "sha256_lf": "5d00b7ffe675557feb3ebd33c4b40264329d3ed4ae26a4e0f633ff13148502d1",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "data/**",
+        "**/*.dta",
+        "**/*.sav",
+        "**/raw/**",
+        "**/restricted/**",
+        "**/confidential/**"
+      ]
+    },
+    "content-invariants": {
+      "source": ".claude/rules/content-invariants.md",
+      "sha256_lf": "375ad1d6c628ea004ca87a68ec1d3019f54af2ef493e3db68acc13337477bae6",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "Slides/**/*.tex",
+        "Quarto/**/*.qmd",
+        "Quarto/**/*.scss",
+        "Preambles/header.tex",
+        "scripts/R/**/*.R"
+      ]
+    },
+    "cross-artifact-review": {
+      "source": ".claude/rules/cross-artifact-review.md",
+      "sha256_lf": "cb9d9c4354711290139be938c8280556bf2d2244b645d2873222a48f22bd0294",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "master_supporting_docs/**/*.tex",
+        "master_supporting_docs/**/*.qmd",
+        "Slides/**/*.tex",
+        "*.tex",
+        "*.qmd"
+      ]
+    },
+    "exploration-fast-track": {
+      "source": ".claude/rules/exploration-fast-track.md",
+      "sha256_lf": "9bba57672571e9b773735c2763ab4b91abe679fdf5874a99ab36ee790f21bc53",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "explorations/**"
+      ]
+    },
+    "exploration-folder-protocol": {
+      "source": ".claude/rules/exploration-folder-protocol.md",
+      "sha256_lf": "e4a4318884702a79c50cd89afe6cd3516c062c9b356863c335930548a5f20268",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "explorations/**"
+      ]
+    },
+    "inference-robustness": {
+      "source": ".claude/rules/inference-robustness.md",
+      "sha256_lf": "daa557c4bc4548f05b262fe95be6592496e794dfa39547c341290df003df3899",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "scripts/**/*.R",
+        "scripts/**/*.do",
+        "scripts/**/*.py"
+      ]
+    },
+    "issue-ledger": {
+      "source": ".claude/rules/issue-ledger.md",
+      "sha256_lf": "2e0ead219e67152e54ca13e0f581dee05365faaa4344d4bec9166fcebb8e6bb6",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        ".github/**",
+        "**/ISSUE_TEMPLATE/**"
+      ]
+    },
+    "knowledge-base-template": {
+      "source": ".claude/rules/knowledge-base-template.md",
+      "sha256_lf": "0ddc87fb4a36d95002a30ab1191f79d88f7145c205fe2f2369f7ee8be72704b8",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "Slides/**/*.tex",
+        "Quarto/**/*.qmd",
+        "scripts/**/*.R"
+      ]
+    },
+    "meta-governance": {
+      "source": ".claude/rules/meta-governance.md",
+      "sha256_lf": "5c29558164e93c65dda960218a5c2a63e12b0bf83644c70be5a5bc7c63547b2c",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "CLAUDE.md",
+        "MEMORY.md",
+        "README.md",
+        "CHANGELOG.md",
+        "TROUBLESHOOTING.md",
+        "CITATION.cff",
+        "guide/**",
+        "docs/**",
+        "templates/**",
+        ".claude/**",
+        ".github/**",
+        "scripts/*.sh",
+        "scripts/*.py"
+      ]
+    },
+    "model-routing": {
+      "source": ".claude/rules/model-routing.md",
+      "sha256_lf": "ffcad52be3e1e90c56cf0f5da3e307da99526d4a48af494bb18b60bef2a93791",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        ".claude/agents/**/*.md",
+        ".claude/skills/**/SKILL.md"
+      ]
+    },
+    "no-pause-beamer": {
+      "source": ".claude/rules/no-pause-beamer.md",
+      "sha256_lf": "db08e98a0af338537409dc40bde720deb2ce569bffa064ffe8cc3c78531af424",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "Slides/**/*.tex"
+      ]
+    },
+    "orchestrator-protocol": {
+      "source": ".claude/rules/orchestrator-protocol.md",
+      "sha256_lf": "981121f9691d65239ad175d4eb29c0b8dde276a2dc2d95acff193c230d51cdf7",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        ".claude/skills/**/SKILL.md",
+        ".claude/agents/**/*.md",
+        ".claude/references/orchestration-schemas.md",
+        ".claude/references/finding-schema.json",
+        ".claude/references/agent-fleet.md"
+      ]
+    },
+    "orchestrator-research": {
+      "source": ".claude/rules/orchestrator-research.md",
+      "sha256_lf": "730e9f5f234d0fd1ec60888fddd4b37edb6b35161dcfbf26b3410e5c1a1f97e3",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "scripts/**/*.R",
+        "explorations/**",
+        "Figures/**/*.R"
+      ]
+    },
+    "pdf-processing": {
+      "source": ".claude/rules/pdf-processing.md",
+      "sha256_lf": "3a2b833228932de9e89f734357bf1a00c3449d46fc2f85174c68dafacfa54d6e",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "master_supporting_docs/**"
+      ]
+    },
+    "plan-first-workflow": {
+      "source": ".claude/rules/plan-first-workflow.md",
+      "sha256_lf": "00f6b51959d331bf34ca6a31a22cc0a3087f5669cbe242576585c454a802552d",
+      "status": "explicit-instruction-loading",
+      "scopes": []
+    },
+    "post-flight-verification": {
+      "source": ".claude/rules/post-flight-verification.md",
+      "sha256_lf": "486fc81ca1412e9979df63df7bb811338298b205e9e0bea9840745af3dbeda96",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        ".claude/skills/lit-review/SKILL.md",
+        ".claude/skills/research-ideation/SKILL.md",
+        ".claude/skills/respond-to-referees/SKILL.md",
+        ".claude/skills/review-paper/SKILL.md",
+        ".claude/skills/interview-me/SKILL.md"
+      ],
+      "claude_alwaysApply": false
+    },
+    "progress-reports": {
+      "source": ".claude/rules/progress-reports.md",
+      "sha256_lf": "15d2f3283f244316f7bcf30aaaf1b732c33a6543fcf7f286e64518d3f1aa3f17",
+      "status": "explicit-instruction-loading",
+      "scopes": []
+    },
+    "prompt-shaping": {
+      "source": ".claude/rules/prompt-shaping.md",
+      "sha256_lf": "ff33184eab434c368941b6baefc7a498b5506f932c4ba3b4ccfdf5ccf1244ad4",
+      "status": "explicit-instruction-loading",
+      "scopes": []
+    },
+    "proofreading-protocol": {
+      "source": ".claude/rules/proofreading-protocol.md",
+      "sha256_lf": "15efcea305e8288ed04fd00ed2fd8a6fc362fa2d8123363305d0ab47be5396a1",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "Slides/**/*.tex",
+        "Quarto/**/*.qmd",
+        "quality_reports/**"
+      ]
+    },
+    "quality-gates": {
+      "source": ".claude/rules/quality-gates.md",
+      "sha256_lf": "843c0c5eaf0de41c2c068cd3a874e995d2a15e4fff26a4c0843fe5cbfe0305a7",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "Slides/**/*.tex",
+        "Quarto/**/*.qmd",
+        "scripts/**/*.R"
+      ]
+    },
+    "r-code-conventions": {
+      "source": ".claude/rules/r-code-conventions.md",
+      "sha256_lf": "23b69c123a3d24ca4d2a384862ce2d0c83c3db9c4fd6bd61073003d29a86e30b",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "Figures/**/*.R",
+        "scripts/**/*.R",
+        "explorations/**/*.R"
+      ]
+    },
+    "r-package-conventions": {
+      "source": ".claude/rules/r-package-conventions.md",
+      "sha256_lf": "f214dff68212053ea27e7716d7382c175d1f9f2ae7d0873f5316c4e1577eca6b",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "R/**/*.R",
+        "tests/**/*.R",
+        "man/**/*.Rd",
+        "vignettes/**",
+        "DESCRIPTION",
+        "NAMESPACE",
+        "NEWS.md"
+      ]
+    },
+    "replication-protocol": {
+      "source": ".claude/rules/replication-protocol.md",
+      "sha256_lf": "71f1faeeaffd0657c701e32ce4e307fcdd2d369afb1ba9347b551fd1d61d8d73",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "scripts/**/*.R",
+        "Figures/**/*.R"
+      ]
+    },
+    "repo-hygiene": {
+      "source": ".claude/rules/repo-hygiene.md",
+      "sha256_lf": "2d8af99980b7323f5ec0f173731b880f431bb06324963547092f742c7c24ae3d",
+      "status": "explicit-instruction-loading",
+      "scopes": []
+    },
+    "review-fencing": {
+      "source": ".claude/rules/review-fencing.md",
+      "sha256_lf": "71302fc94e665d4c3ffb9b1d22dcbd9aec0dcad1c4005d0ca8cea81eaa806abe",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "*.tex",
+        "*.qmd",
+        "master_supporting_docs/**",
+        "quality_reports/qualification/**",
+        "quality_reports/passports/**",
+        "quality_reports/replication-log.md",
+        "quality_reports/spec-ledger.md",
+        "quality_reports/audits/**",
+        "quality_reports/oracle_audits/**",
+        ".claude/agents/claim-verifier.md"
+      ]
+    },
+    "session-logging": {
+      "source": ".claude/rules/session-logging.md",
+      "sha256_lf": "31d9ac9dba253eba5c77c572f69783c722a57f7bdbf3445822c9aa24ef61c95e",
+      "status": "explicit-instruction-loading",
+      "scopes": []
+    },
+    "simulation-conventions": {
+      "source": ".claude/rules/simulation-conventions.md",
+      "sha256_lf": "1e0e81322271a4fe722fde1240a46ae9083cea32646e508a9ee89af180938efd",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "**/*simulation*.R",
+        "**/*_sim.R",
+        "**/*_mc.R",
+        "scripts/**/simulations/**",
+        "explorations/**/*.R"
+      ]
+    },
+    "single-source-of-truth": {
+      "source": ".claude/rules/single-source-of-truth.md",
+      "sha256_lf": "d696ea80fc7b7981a78eb9d1e222ae9785de89df174ca799def8edb25361fcd7",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "Figures/**/*",
+        "Quarto/**/*.qmd",
+        "Slides/**/*.tex"
+      ]
+    },
+    "stata-code-conventions": {
+      "source": ".claude/rules/stata-code-conventions.md",
+      "sha256_lf": "7c19003dccd4a43ec5c6e844f9e38bfd51654b8a2b5a0f0fa355e69c799e0d53",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "**/*.do",
+        "scripts/stata/**"
+      ]
+    },
+    "summary-parity": {
+      "source": ".claude/rules/summary-parity.md",
+      "sha256_lf": "f77488e8ce6399de788e66420bdf7eb8ee548ec630cc9223a84acd2269d0bd38",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "CHANGELOG.md",
+        "README.md",
+        "**/*.qmd",
+        ".claude/skills/*/SKILL.md",
+        ".claude/rules/*.md",
+        ".claude/agents/*.md"
+      ],
+      "claude_alwaysApply": false
+    },
+    "tikz-measurement": {
+      "source": ".claude/rules/tikz-measurement.md",
+      "sha256_lf": "bb3815a69b4109b6c62782c5d7ec3b1fc401a9e39440030353a1bc1e11292c48",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "Slides/**/*.tex",
+        "Figures/**/*.tex",
+        "Preambles/**/*.tex",
+        "scripts/**/*.py",
+        "scripts/**/*.R"
+      ]
+    },
+    "tikz-prevention": {
+      "source": ".claude/rules/tikz-prevention.md",
+      "sha256_lf": "9af7f0989bc9783be64dc52e883db3aaced245745cdb15daba66e7c807a4f518",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "Slides/**/*.tex",
+        "Figures/**/*.tex",
+        "Preambles/**/*.tex"
+      ]
+    },
+    "tikz-visual-quality": {
+      "source": ".claude/rules/tikz-visual-quality.md",
+      "sha256_lf": "21d0ec7a1c10b716b8cf284de56408aea7c3b348754de378cdc3160ab7fe38a9",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "Slides/**/*.tex",
+        "Figures/**/*.tex"
+      ]
+    },
+    "verification-protocol": {
+      "source": ".claude/rules/verification-protocol.md",
+      "sha256_lf": "bd0f80a3835700e4fcc640153a1ad56d1fd7d8500b267191bcb079d2c48b7896",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "Slides/**/*.tex",
+        "Quarto/**/*.qmd",
+        "docs/**"
+      ]
+    },
+    "writing-with-ai": {
+      "source": ".claude/rules/writing-with-ai.md",
+      "sha256_lf": "66e8d560ad2c528304533c653d87646d3bf86e2d7ee0f07565144da54ba0e8d9",
+      "status": "explicit-instruction-loading",
+      "scopes": [
+        "**/*.tex",
+        "**/*.qmd",
+        "**/*.md",
+        "**/*.Rmd"
+      ]
+    }
+  },
+  "hooks": {
+    "claim-reconcile.py": {
+      "source": ".claude/hooks/claim-reconcile.py",
+      "sha256_lf": "fa7d755c74edb7392029f2a1165226ff0023db15bff1a1cc4abbdf08d58936d9",
+      "status": "not-wired-in-codex"
+    },
+    "context-monitor.py": {
+      "source": ".claude/hooks/context-monitor.py",
+      "sha256_lf": "0d34496a3a71179a49c2fc6d352d0fd1bdfa32ad590ed7d81fe7ecfc44fe9980",
+      "status": "not-wired-in-codex"
+    },
+    "git-guardrails.py": {
+      "source": ".claude/hooks/git-guardrails.py",
+      "sha256_lf": "7e029599c5e40adc5722106003c9cb16ece3d503b0a95640d20930b5946244e8",
+      "status": "not-wired-in-codex"
+    },
+    "issue-guard.py": {
+      "source": ".claude/hooks/issue-guard.py",
+      "sha256_lf": "175c405eb22670120f7da58b03e19206a2add45576a4246a2118919d5f124050",
+      "status": "not-wired-in-codex"
+    },
+    "log-reminder.py": {
+      "source": ".claude/hooks/log-reminder.py",
+      "sha256_lf": "43b8ab2404f20ed407f58a61cfac16d487531e05d45af5dcbd1b212002dc0bff",
+      "status": "not-wired-in-codex"
+    },
+    "notify.sh": {
+      "source": ".claude/hooks/notify.sh",
+      "sha256_lf": "9788d78a08b59a5f41b870a1723f7d1880995e405a0836c644be03a800c28814",
+      "status": "not-wired-in-codex"
+    },
+    "open-issues.py": {
+      "source": ".claude/hooks/open-issues.py",
+      "sha256_lf": "38292f39757e85af7b8a9a985ea04622d77366d94923a54e049e861e28a4dd5a",
+      "status": "not-wired-in-codex"
+    },
+    "post-compact-restore.py": {
+      "source": ".claude/hooks/post-compact-restore.py",
+      "sha256_lf": "1e94065883441015612ef8aa71ffefea0110aaf637fd2f089ef1d8815fb3c227",
+      "status": "not-wired-in-codex"
+    },
+    "pre-compact.py": {
+      "source": ".claude/hooks/pre-compact.py",
+      "sha256_lf": "6cb5fc0b0be5f8fc72e65c67f7fbabfaf3b46d49b768d8eda167de8d90878a57",
+      "status": "not-wired-in-codex"
+    },
+    "root-of-trust-guard.py": {
+      "source": ".claude/hooks/root-of-trust-guard.py",
+      "sha256_lf": "49e89fb3b878694c4122898e5f81e61536ed7f5883d64db859f2aff25e9638f8",
+      "status": "not-wired-in-codex"
+    },
+    "session-handoff.py": {
+      "source": ".claude/hooks/session-handoff.py",
+      "sha256_lf": "b3fd4fb8e27e853465d12b2e9acbd9afb3b2f7f274508595a08d9ce349353ee9",
+      "status": "not-wired-in-codex"
+    }
+  },
+  "shared": {
+    ".claude/WORKFLOW_QUICK_REF.md": "8bbcac568375ec4958749aef0ddcaa1252f025193a40ddcc2e980ac709e381ed",
+    ".claude/output-styles/academic-writing.md": "354210fb2e91788a82ddf77aab6705054221179e4c8d014e65d9818f84e657c6",
+    ".claude/output-styles/referee.md": "ccd3148008f5b0b17d1b98f1b715d516cdaef7bffb93578afbc811e8a337864c",
+    ".claude/references/agent-fleet.md": "6b62d3ab669c4ad79177af08e184cc2903385e833a723a764613c1466fb43be3",
+    ".claude/references/audit-pet-peeves.md": "dbae4602b5e97b72dc51b3ee24ea568199d7f6ee41d50cd1d96d8206fd6f1a0f",
+    ".claude/references/discipline-cards.md": "548186a2c8d2818141fa4057d6d487216f873c6e9860c3895c9c71aa019e5051",
+    ".claude/references/external-oracle-process.md": "9b8736f103bb27f6c5224d37cf9ce54ccaa13eee72a3b506cb6b72fe1d012930",
+    ".claude/references/finding-schema.json": "4d542a4a0ffa58104dd45fb77492c2c059e79599bae26c6331e5d0621c0d7479",
+    ".claude/references/journal-profiles.md": "0cfe6545c8f15613182885edadc36455771772b9e23c8afdc1c9f8efc3dd1dce",
+    ".claude/references/model-versions.md": "910e27945d9022972fca095b52575e47c6c5394e9f7086f2a66f5a79b68d19f3",
+    ".claude/references/orchestration-schemas.md": "93640756384e8c0a86f45bafe74ec1a89c52e8d4e3d936c22660977824308dcb",
+    ".claude/references/prompt-formatting-core.md": "2e674941dcccd49313a6b6499b7d1a729c502d8c2e7ec6245915592d76acfa14",
+    ".claude/references/provenance-and-ground-truth.md": "9a3b2a72f0b0c192b77e092ba15dfde6c81e7b7cdd4d6647c17466726bff1baa",
+    ".claude/references/release-engineering.md": "6c86ca89248592b6b7f15839c3fed8e8617943c02d218aa728023d88458ad31f",
+    ".claude/references/research-agent-laws.md": "154a5b9a5eda8ca58ee15bd04bec2a07234743422833017e611d595afc85c6fd",
+    ".claude/references/scheduled-routines.md": "5781bbbea55a8042cf6249f0737891da6e9a23091f92d6584502a85a80ac2cfd",
+    ".claude/references/theory-proving.md": "b4beaa4e64623d9f07548876d8def6189da29ff14f4c0aa99d62f79765d65d7c",
+    ".claude/references/v2.0-backlog.md": "609fa90a8e69411088fc56869a84d907d1035878859e300d718b316caefc0737",
+    ".claude/references/verification-ladder.md": "d30d667cdced983176a7a721e366ee8539a4d1913ff71bdc4320a3e5bb9fd313",
+    ".claude/scripts/statusline.sh": "2c2a69f969c7b9bb3191b9cda4b36c566e4140968a5af532e0de9606e1bd24fd",
+    ".claude/settings.json": "aeffad287facf349d6f243482c142ee138fc17d0c71b93d469f76bbf5516e67d",
+    ".githooks/pre-commit": "c8764d6687b7834b1d0e002b23e2e30f5e773059da5a46c099fc7616646666fb",
+    ".github/workflows/deploy.yml": "98958861691731101698c885df364c8eaa3f54467c4acc59234e2631851ecbc9",
+    ".github/workflows/gates.yml": "49f37f8c9b750152243cff1b9705796e3291775379d81b8c6ff3f7292d16c564",
+    "CLAUDE.md": "a4cd39514cc1d5e0a5dba94852e2fcdb68b6e7a72dc4d2c30209b290d8fd6dce",
+    "MEMORY.md": "bea2d15f2243eefc1b0bcac404c07e3ebb4ba8ccac7d21811d5cdbc3d9280204",
+    "scripts/R/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/R/00_run_all.R": "e0bcba554e42003e6d311f1954cf419eb74a6e652e0c44d8107299b00d3d6bf5",
+    "scripts/R/01_load.R": "e40f9fcf241c8d336c604a88ab56c2dad5c364ccb681c089a9e978831197cc63",
+    "scripts/R/02_clean.R": "55e23c83b44851a35e96e6d9ed24560ab7def2ae3428f6287216b8627cb651f1",
+    "scripts/R/03_analyze.R": "430e9917b05a2cbb57c93080ab9d8ee05cb6ede2900612d730d7872f700410bb",
+    "scripts/R/04_tables.R": "d65302cc7f5c9e6f766095ddded7198f36fb50d5a15f8015e96e6232f6554440",
+    "scripts/R/05_figures.R": "27cc340628781366e96b76ba64a1de24ec583cdf0cc9213d764e43bc79ffeb46",
+    "scripts/R/README.md": "ba2d4c9287f2b8348e8b25a0880b4c25afc3eec5161d1131da76456c21a6ec8c",
+    "scripts/backtest.sh": "f97b28c61753a410f8b5a16ab0d834b3b0fcd4607543464970ed5679cc69d9b2",
+    "scripts/check-derived-counts.py": "1eed3b879c854a06873c11912beb744f63727bd0e3b5d05fe92483d9cd6c7cc9",
+    "scripts/check-ledger-coverage.py": "cae3a50064da29c89c45522a38cefce118c661d794fc52e6fca257498dfa158b",
+    "scripts/check-links.py": "59b43b54cde247ce26d736e23a2a74281a35f2f36a7a84e58448763c00531141",
+    "scripts/check-model-versions.sh": "4c961eb10f29f60ac6d7b53cce6b52f1c838aea61c4acf7524f9a1c6f38d4d64",
+    "scripts/check-palette-sync.py": "08451cded4a5f86fa774cbf4edaf0666fa0f52764449011d123a9db437dec47d",
+    "scripts/check-palette-sync.sh": "ac4447974c830a757617b8888b8ff2c621525273793073f5104e4ef4636a6af7",
+    "scripts/check-repo-hygiene.py": "2481c77a7ebc71de239fe018380d78e10401f7ffc23782398bfc81ec62d53758",
+    "scripts/check-skill-integrity.py": "3c9a942b33224cf9e516d7bb48c37fb3009bf5e2f48dba303d69c978193b285a",
+    "scripts/check-spec-conformance.py": "da3407752bac98ba5da457a75f5c5d2c70a0132f0ef34b6cd21709ae8f2a6025",
+    "scripts/check-staleness.py": "20790701919a648a198fbb0fa78e06c34bd1b942797d448613da3fd7dfd24140",
+    "scripts/check-surface-sync.py": "c996303dda09f63a37fd4ea6eb074f30339ff9bc732b11a2657fc82a0e9cbf6b",
+    "scripts/check-surface-sync.sh": "a1b3fb5e1199a2897d7a84f5cb9946c2f7501806facd18a0f94a8cb21a9ac05a",
+    "scripts/check-tikz-prevention.py": "84f506eafc5254a30b167df747e83ca718b4e1e0e6e020da797eefe80d46f94b",
+    "scripts/file-issue.py": "bbdea6069c8a633de926815651574924f371c63e80ecbe00531037727c54c63b",
+    "scripts/hook-battery.sh": "cdfb74660118e071d65529c02cb7ce18fcb221a32bfe7a7ba239034d857e7ef6",
+    "scripts/install-hooks.sh": "33be6b52a7e00722c19f7d2f798e3732e3218d088abef29d5ef39de20ad8ee46",
+    "scripts/nightly-repro-check.sh": "9b89b9ef07654f3134004e90a6aae06434357b03805b012c8ee859a79cf176a0",
+    "scripts/quality_score.py": "72adfe392ce412a3597a0c197d5430332c4f471b115fe14c2845b24b08a3f2f8",
+    "scripts/run-skill-eval.sh": "08af40de0a92e54ff2c49baf2fb35d308916a3b7be5d39e4fea26c07a16f8794",
+    "scripts/slide-qa.py": "f769a89f0a4f19afc54aa5fd8313ad846fa97a206f103099e0110c617c739405",
+    "scripts/stamp-render.sh": "189d43f06496f584587e7deb93df751d7d0108ed86eb39caec71d30030b7efbc",
+    "scripts/sync_to_docs.sh": "3a88a7d65c1abdeddc8ce791d24475ccc29487f0c16f91ed5c51ef1dd4541fbf",
+    "scripts/validate-findings.py": "61eea634db9347a7f1a06a0ba5e320e9df984bbd03d49243cf502962079d2d57",
+    "scripts/validate-setup.sh": "53ce43e104e49dda36b696dbf6c66ea49b7db59c04f7932cbb7cbe98bc04d179"
+  }
+}

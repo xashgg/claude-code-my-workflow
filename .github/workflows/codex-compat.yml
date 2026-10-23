@@ -1,0 +1,27 @@
+name: codex-compat
+
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  adapters:
+    name: reference adapters (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check generated adapters and source inventory
+        run: python -B scripts/codex-compat.py --check
+      - name: Test drift detection and preservation
+        run: python -B scripts/test-codex-compat.py

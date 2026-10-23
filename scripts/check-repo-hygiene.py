@@ -13,6 +13,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Files permitted at the repository root. Anything else is clutter until allowlisted.
 ROOT_ALLOW = {
+    "AGENTS.md",  # Codex entry point; the canonical Claude instructions stay in CLAUDE.md.
     "README.md", "CLAUDE.md", "MEMORY.md", "CHANGELOG.md", "TROUBLESHOOTING.md",
     "LICENSE", "CITATION.cff", ".gitignore", ".gitattributes",
     "Bibliography_base.bib", ".DS_Store",
@@ -29,6 +30,7 @@ ROOT_ALLOW = {
     "requirements.txt", "environment.yml", "uv.lock", "pyproject.toml", "Dockerfile",
 }
 ROOT_ALLOW_DIRS = {
+    ".agents", ".codex",  # Additive Codex discovery and compatibility files.
     ".claude", ".git", ".github", ".githooks", ".vscode", "Figures", "Preambles",
     "Quarto", "Slides", "docs", "explorations", "guide", "master_supporting_docs",
     "quality_reports", "scripts", "templates",
