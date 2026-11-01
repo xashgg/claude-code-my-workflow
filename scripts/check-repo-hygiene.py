@@ -34,6 +34,7 @@ ROOT_ALLOW_DIRS = {
     ".claude", ".git", ".github", ".githooks", ".vscode", "Figures", "Preambles",
     "Quarto", "Slides", "docs", "explorations", "guide", "master_supporting_docs",
     "quality_reports", "scripts", "templates",
+    "manuscripts",  # Track only the directory's ignore policy; manuscripts stay local.
     # The project layout in .claude/rules/repo-hygiene.md ("Where each kind of file
     # goes"): generated results in output/, raw inputs in data/raw/, package-style
     # functions and tests in R/ and tests/. A fork that follows it must not fail here.

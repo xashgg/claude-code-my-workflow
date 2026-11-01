@@ -1106,7 +1106,7 @@
     "scripts/check-model-versions.sh": "4c961eb10f29f60ac6d7b53cce6b52f1c838aea61c4acf7524f9a1c6f38d4d64",
     "scripts/check-palette-sync.py": "08451cded4a5f86fa774cbf4edaf0666fa0f52764449011d123a9db437dec47d",
     "scripts/check-palette-sync.sh": "ac4447974c830a757617b8888b8ff2c621525273793073f5104e4ef4636a6af7",
-    "scripts/check-repo-hygiene.py": "2481c77a7ebc71de239fe018380d78e10401f7ffc23782398bfc81ec62d53758",
+    "scripts/check-repo-hygiene.py": "459e4150cbac3f8367cf2534cf3edede788c929fb4c48fb52c7144896e6abc43",
     "scripts/check-skill-integrity.py": "3c9a942b33224cf9e516d7bb48c37fb3009bf5e2f48dba303d69c978193b285a",
     "scripts/check-spec-conformance.py": "da3407752bac98ba5da457a75f5c5d2c70a0132f0ef34b6cd21709ae8f2a6025",
     "scripts/check-staleness.py": "20790701919a648a198fbb0fa78e06c34bd1b942797d448613da3fd7dfd24140",
