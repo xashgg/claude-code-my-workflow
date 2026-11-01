@@ -13,6 +13,16 @@ Read every unscoped rule at task start and matching scoped rules before touching
 their artifacts. This is an instruction-loading protocol, not automatic Claude
 rule injection. Recheck applicable scopes when the task changes files or roles.
 
+## Scope and preservation
+
+When using this repository for a new project, create and edit the manuscripts,
+code, and analysis files needed for the user's requested work. Do not treat
+starting a project as authorization to rewrite, clean up, or customize the
+repository template or infrastructure. Unless explicitly requested, leave
+upstream files, configuration, documentation, and workflows unchanged when they
+do not affect operation in Codex; limit infrastructure changes to those necessary
+for Codex to run correctly.
+
 Preserve `CLAUDE.md` and `.claude/` during compatibility maintenance. Do not add
 domain customizations, alter personal settings, change Git remotes, install hooks,
 commit, push, or publish without authorization for that action. Maintain existing
